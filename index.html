@@ -9,6 +9,8 @@
     <!-- CSS -->
     <link rel="stylesheet" href="assets/css/style.css">
     <title>Travel Website</title>
+    <!-- Swiper JS -->
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
 </head>
 <body>
     <header class="header" id="header">
@@ -70,7 +72,80 @@
                 </div>
             </div>
         </section>
+        <!-- About -->
+        <section class="about section" id="about">
+            <div class="about__container container grid">
+                <div class="about__data">
+                    <h2 class="section__title about__title">More Information <br> About The Best Beaches</h2>
+                    <p class="about__description">You can find the most beautiful and pleasant places at the best prices with special discounts, you choose the place we will guide you all the way to wait, get your place now.    
+                    </p>
+                    <a href="#" class="button">Reserve A Place</a>
+                </div>
+                <div class="about__img">
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about1.jpg" alt="" class="about__img-one">
+                    </div>
+                    <div class="about__img-overlay">
+                        <img src="assets/img/about2.jpg" alt="" class="about__img-two">
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- Discover -->
+        <section class="discover section" id="discover">
+            <h2 class="section__title">Discover The Most <br> Attractive Places</h2>
+            <div class="discover__container container swiper-container">
+                <div class="swiper-wrapper">
+                    <!-- Discover 1 -->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/discover1.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Bali</h2>
+                            <span class="discover__description">24 Tours Available</span>
+                        </div>
+                    </div>
+                    <!-- Discover 2 -->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/discover2.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hawaii</h2>
+                            <span class="discover__description">15 Tours Available</span>
+                        </div>
+                    </div>
+                    <!-- Discover 3 -->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/discover3.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Hvar</h2>
+                            <span class="discover__description">18 Tours Available</span>
+                        </div>
+                    </div>
+                    <!-- Discover 4 -->
+                    <div class="discover__card swiper-slide">
+                        <img src="assets/img/discover4.jpg" alt="" class="discover__img">
+                        <div class="discover__data">
+                            <h2 class="discover__title">Whitehaven</h2>
+                            <span class="discover__description">32 Tours Available</span>
+                        </div>
+                    </div>               
+                </div>
+            </div>
+        </section>
     </main>
+    <!-- Swiper JS -->
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".discover__container", {
+          effect: "coverflow",
+          grabCursor: true,
+          centeredSlides: true,
+          slidesPerView: "auto",
+          loop: true,
+          coverflowEffect: {
+            rotate: 0,
+          },
+        });
+      </script>
     <!-- Main JS -->
     <script src="assets/js/main.js"></script>
 </body>
