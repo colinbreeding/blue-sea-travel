@@ -410,7 +410,11 @@ input{
     bottom: 1.5rem;
     left: 1rem;
 }
-
+.swipe__data{
+    position: relative;
+    float: right;
+    font-size: .8rem;
+}
 .discover__title,
 .discover__description{
     color: var(--white-color);
@@ -849,6 +853,9 @@ input{
     .footer__rights{
         flex-direction: row;
         justify-content: space-between;
+    }
+    .swipe__data{
+        font-size: 1rem;
     }
 }
 
