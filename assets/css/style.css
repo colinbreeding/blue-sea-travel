@@ -5,7 +5,7 @@
 :root{
     --header-height: 3rem;
     /* Colors */
-    --hue-color: 190;
+    --hue-color: 200;
     /* HSL color mode */
     --first-color: hsl(var(--hue-color), 64%, 22%);
     --first-color-second: hsl(var(--hue-color), 64%, 22%);
@@ -239,6 +239,9 @@ input{
     color: var(--title-color);
     cursor: pointer;
 }
+.nav__dark{
+    margin-left: 2rem;
+}
 
 /* Show Menu */
 .show-menu{
@@ -311,6 +314,9 @@ input{
     font-size: 1.2rem;
     width: max-content;
 }
+.home__social-link:hover{
+    color: var(--first-color-alt)
+}
 .home__info{
     background-color: var(--first-color);
     display: flex;
@@ -330,6 +336,9 @@ input{
 }
 .home__info-button{
     font-size: var(--smaller-font-size);
+}
+.home__info-button:hover{
+    color: var(--first-color-alt);
 }
 .home__info-overlay{
     overflow: var(--img-hidden);
